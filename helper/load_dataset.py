@@ -32,3 +32,16 @@ def load_lipo():
         return pd.read_csv(f'{dataset_dir}/LIPO_regression.csv')
     except:
         raise FileNotFoundError()
+    
+def load_hdac2():
+    try:
+        return pd.read_csv(f'{dataset_dir}/HDAC2_classification.csv')
+    except:
+        raise FileNotFoundError()
+    
+
+def load_fgfr1():
+    try:
+        return pd.read_csv(f'{dataset_dir}/FGFR1_regression.csv')
+    except:
+        raise FileNotFoundError()
