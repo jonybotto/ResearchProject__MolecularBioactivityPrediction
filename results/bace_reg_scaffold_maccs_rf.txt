@@ -1,0 +1,19 @@
+BACE regression | Scaffold Splitting | MACCS Features | RF Model
+
+Results:
+
+Best params: {'max_depth': 18, 'max_features': 65, 'min_samples_leaf': 2, 'min_samples_split': 4, 'n_estimators': 15}
+
++------------+---------+--------+
+| Metrics    |   Train |   Test |
++============+=========+========+
+| RMSE       |  0.4823 | 1.2249 |
++------------+---------+--------+
+| R2         |  0.864  | 0.4245 |
++------------+---------+--------+
+| MAPE       |  0.0602 | 0.1574 |
++------------+---------+--------+
+| Pearson R  |  0.9337 | 0.7101 |
++------------+---------+--------+
+| Spearman R |  0.924  | 0.7002 |
++------------+---------+--------+

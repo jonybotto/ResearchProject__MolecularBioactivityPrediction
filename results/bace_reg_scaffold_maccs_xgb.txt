@@ -1,0 +1,19 @@
+BACE regression | Scaffold Splitting | MACCS Features | XGBoost Model
+
+Results:
+
+Best params: {'booster': 'gbtree', 'colsample_bytree': 0.6442453508893451, 'gamma': 0.028131677474597244, 'learning_rate': 0.11524607771929213, 'max_depth': 10, 'min_child_weight': 2, 'n_estimators': 290, 'reg_alpha': 0.0022397266188939175, 'reg_lambda': 15.054237280051655, 'subsample': 0.4930356104753837, 'tree_method': 'hist'}
+
++------------+---------+--------+
+| Metrics    |   Train |   Test |
++============+=========+========+
+| RMSE       |  0.3298 | 1.1392 |
++------------+---------+--------+
+| R2         |  0.9364 | 0.5022 |
++------------+---------+--------+
+| MAPE       |  0.0358 | 0.1378 |
++------------+---------+--------+
+| Pearson R  |  0.968  | 0.7575 |
++------------+---------+--------+
+| Spearman R |  0.9616 | 0.7214 |
++------------+---------+--------+

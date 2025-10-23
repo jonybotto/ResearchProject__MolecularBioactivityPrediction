@@ -15,15 +15,20 @@ from scipy.stats import (
 def classification_metrics(y_true, y_pred, y_score):
     metrics = {}
     report = classification_report(y_true, y_pred, output_dict=True)
-    # Accuracy
     metrics['accuracy'] = report['accuracy']
     metrics['recall'] = report['weighted avg']['recall']
     metrics['precision'] = report['weighted avg']['precision']
     metrics['f1-score'] = report['weighted avg']['f1-score']
-    metrics['0_recall'] = report['0.0']['recall']
-    metrics['0_precision'] = report['0.0']['precision']
-    metrics['1_recall'] = report['1.0']['recall']
-    metrics['1_precision'] = report['1.0']['precision']
+    for lbl in ("0", "0.0"):
+        if lbl in report:
+            metrics["0_recall"] = report[lbl]["recall"]
+            metrics["0_precision"] = report[lbl]["precision"]
+            break
+    for lbl in ("1", "1.0"):
+        if lbl in report:
+            metrics["1_recall"] = report[lbl]["recall"]
+            metrics["1_precision"] = report[lbl]["precision"]
+            break
     metrics['auc-roc'] = roc_auc_score(y_true, y_score, average='weighted')
     metrics['auc-prc'] = average_precision_score(y_true, y_score, average='weighted')
 

@@ -1,0 +1,19 @@
+BACE regression | Scaffold Splitting | MACCS Features | ANN Model
+
+Results:
+
+Best params: {'activation': 'gelu', 'batch_size': 48, 'dropout_rate': 0.47364860504708284, 'epochs': 100, 'hidden_dim_1': 64, 'hidden_dim_2': 192, 'hidden_dim_3': 96, 'hidden_dim_4': 160, 'learning_rate': 0.0028412138796748824, 'n_layers': 4, 'patience': 10}
+
++------------+---------+--------+
+| Metrics    |   Train |   Test |
++============+=========+========+
+| RMSE       |  0.9079 | 1.2522 |
++------------+---------+--------+
+| R2         |  0.5181 | 0.3985 |
++------------+---------+--------+
+| MAPE       |  0.1237 | 0.1709 |
++------------+---------+--------+
+| Pearson R  |  0.7523 | 0.6654 |
++------------+---------+--------+
+| Spearman R |  0.7106 | 0.6383 |
++------------+---------+--------+

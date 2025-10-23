@@ -1,0 +1,19 @@
+BACE regression | Random Splitting | MACCS Features | ANN Model
+
+Results:
+
+Best params: {'activation': 'gelu', 'batch_size': 80, 'dropout_rate': 0.4117861200792948, 'epochs': 100, 'hidden_dim_1': 192, 'hidden_dim_2': 192, 'hidden_dim_3': 160, 'hidden_dim_4': 96, 'learning_rate': 0.0038658482242215878, 'n_layers': 3, 'patience': 10}
+
++------------+---------+--------+
+| Metrics    |   Train |   Test |
++============+=========+========+
+| RMSE       |  0.8485 | 0.8907 |
++------------+---------+--------+
+| R2         |  0.5996 | 0.5648 |
++------------+---------+--------+
+| MAPE       |  0.1043 | 0.1098 |
++------------+---------+--------+
+| Pearson R  |  0.8234 | 0.807  |
++------------+---------+--------+
+| Spearman R |  0.7943 | 0.7499 |
++------------+---------+--------+

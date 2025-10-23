@@ -1,0 +1,19 @@
+BACE regression | Random Splitting | MACCS Features | RF Model
+
+Results:
+
+Best params: {'max_depth': 13, 'max_features': 40, 'min_samples_leaf': 3, 'min_samples_split': 6, 'n_estimators': 70}
+
++------------+---------+--------+
+| Metrics    |   Train |   Test |
++============+=========+========+
+| RMSE       |  0.5955 | 0.7161 |
++------------+---------+--------+
+| R2         |  0.8028 | 0.7187 |
++------------+---------+--------+
+| MAPE       |  0.0761 | 0.0935 |
++------------+---------+--------+
+| Pearson R  |  0.9062 | 0.8541 |
++------------+---------+--------+
+| Spearman R |  0.897  | 0.7943 |
++------------+---------+--------+

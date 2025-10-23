@@ -1,5 +1,4 @@
 import numpy as np
-import rdkit
 from rdkit import Chem
 from rdkit.Chem import AllChem
 from rdkit.Chem import rdFingerprintGenerator
